@@ -2,7 +2,7 @@ import React from 'react'
 import {useParams}  from 'react-router-dom'
 
 
-export default function FicheLogement() {
+export default function Destination() {
 
   const params = useParams() 
   console.log(params);
