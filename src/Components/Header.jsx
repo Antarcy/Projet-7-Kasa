@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../assets/images/LOGO.svg'
 import Nav from './Nav'
-import '../style/Header.css'
+import '../style/Header.scss'
 export default function Header() {
   return (
 		<header className="headerWrap">
