@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../../components/Header"
-import Banner from "../../components/Banner"
-import CardList from "../../components/CardList"
-import Footer from "../../components/Footer"
+import Header from "../Components/Header"
+import Banner from "../Components/Banner"
+import CardList from "../Components/CardList"
+import Footer from "../Components/Footer"
 
 export default function Home() {
 	return (
