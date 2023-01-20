@@ -5,14 +5,10 @@
 .App {
   font-family: "Montserrat", sans-serif;
 }
-body {
-  max-width: 1440px;
-}
 
 main {  
   margin: 0 100px;
 }
-
 .errorContainer {
   display: flex;
   color: #FF6060;
@@ -20,20 +16,17 @@ main {
   align-items: center;
   margin: 100px 0;
 }
-
 .errorNumber {
   display: flex;
   font-size: 288px;
   font-weight: 700;
   margin: auto;
 }
-
 .errorText {
   display: flex;
   font-size: 36px;
   font-weight: 500;
 }
-
 .errorLinkHome {
   display: flex;
   text-decoration: none;
@@ -41,7 +34,6 @@ main {
   font-size: 18px;
   font-weight: 500;
   margin-top: 100px;
-
   &:hover {
     text-decoration-line: underline;
   }
