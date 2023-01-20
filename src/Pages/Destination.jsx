@@ -1,12 +1,7 @@
 import React from 'react'
-import {useParams}  from 'react-router-dom'
 
 
-export default function Destination() {
-
-  const params = useParams() 
-  console.log(params);
-  
+export default function FicheLogement() {
   return (
     <div>
       <h1>voici la fiche Logement de l'id :</h1>
