@@ -1,10 +1,10 @@
 import React from "react";
-import Accordion from "../Components/Accordion"
+import Collapse from "../Components/Collapse"
 
 export default function About() {
 	return (
 		<div>
-			< Accordion />
+			< Collapse />
 		</div>
 	);
 }
