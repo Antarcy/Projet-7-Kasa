@@ -1,7 +1,6 @@
 import React from "react";
 import Banner from "../Components/Banner"
 import Card from "../Components/Card"
-import '../style/Card.scss'
 import { Link } from "react-router-dom";
 import data from "../data/destination.json";
 

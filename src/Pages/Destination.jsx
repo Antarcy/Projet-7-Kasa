@@ -6,10 +6,10 @@ export default function Destination() {
 
   const params = useParams() 
   console.log(params);
-
+  
   return (
     <div>
-      <h1>voici la fiche Logement</h1>
+      <h1>voici la fiche Logement de l'id :</h1>
     </div>
   )
 }

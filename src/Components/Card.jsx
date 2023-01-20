@@ -1,7 +1,7 @@
 import React from 'react'
 import '../style/Card.scss'
+
 export default function Card({cover, title}) {
-	console.log(title);
   return (
 		<article className="card_logement">
 			<img src={cover} alt="location" />
