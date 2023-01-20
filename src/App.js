@@ -7,6 +7,8 @@ import Destination from './Pages/Destination';
 import Footer from "./Components/Footer";
 import ErrorPage from './Pages/ErrorPage';
 
+
+
 function App() {
   return (
 		<div className="App">
@@ -16,7 +18,7 @@ function App() {
         
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
-					<Route path="/logement/id" element={<Destination />} />
+					<Route path="/logement/:id" element={<Destination />} />
           <Route path="*" element={<ErrorPage />} />
 				</Routes>
 			</main>

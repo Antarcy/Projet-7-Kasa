@@ -1,9 +1,10 @@
 import React from "react";
+import Accordion from "../Components/Accordion"
 
 export default function About() {
 	return (
 		<div>
-			<h1>À propos</h1>
+			< Accordion />
 		</div>
 	);
 }
