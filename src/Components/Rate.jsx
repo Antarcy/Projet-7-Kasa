@@ -1,4 +1,5 @@
 import React from 'react'
+import '../style/Rate.scss'
 
 export default function Rate() {
   return (

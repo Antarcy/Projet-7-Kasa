@@ -1,9 +1,10 @@
 import React from 'react'
+import '../style/Tag.scss'
 
 export default function Tag(props) {
   return (
     <div>
-      <h1>{props.tag}</h1>
+      <div className='tagContainer'>{props.tag}</div>
     </div>
   )
 }
