@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import LeftArrow from "../Components/LeftArrow";
-import RightArrow from "../Components/RightArrow";
+import left from "../assets/images/vector-left.svg";
+import right from "../assets/images/vector-right.svg";
 import "../style/Carrousel.scss";
 
 export default function Carrousel({ slides }) {
@@ -14,16 +14,21 @@ export default function Carrousel({ slides }) {
 	};
 
 	return (
-		<div className="carrousel-container">
-			<LeftArrow onClick={(prevSlide)} />
-			<RightArrow onClick={nextSlide} />
+		<section id="carrousel-container">
+			{length > 1 && <img src={left} alt="gauche" onClick={prevSlide} className="leftArrow" />}
+			{length > 1 && <img src={right} alt="droite" onClick={nextSlide} className="rightArrow" />}
 			{slides.map((slide, index) => (
 				<div key={index}>
 					{index === current && (
-						<img src={slide} alt="appartement" className="slideImage" />
+						<img src={slide} alt="appartement à louer" className="slideImage" />
+					)}
+					{index === current && (
+						<span className="slide-number">
+							{current + 1}/{length}
+						</span>
 					)}
 				</div>
 			))}
-		</div>
+		</section>
 	);
 }
