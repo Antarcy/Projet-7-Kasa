@@ -3,6 +3,7 @@
 	height: 47px;
 	margin: 31px auto 0;
 }
+
 .collapse {
 	&__visible {
 		background: #ff6060;
@@ -14,10 +15,12 @@
 		height: 47px;
 		padding: 7px 15px;
 		border-radius: 5px;
+
 		h2 {
 			font-size: 20px;
 		}
 	}
+
 	&__toggle {
 		font-size: 18px;
 		max-width: 82%;
@@ -27,6 +30,7 @@
 		background: #f6f6f6;
 		border-radius: 5px;
 		transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
+
 		p {
 			margin: 0;
 			padding: 22px 15px;
@@ -35,6 +39,7 @@
 		}
 	}
 }
+
 .animated {
 	opacity: 1;
 	transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
@@ -45,6 +50,7 @@
     transform: rotate(0deg);
     transition: 0.4s 0.4s ease-in-out;
 }
+
 .rotated {
 		transform: rotate(180deg);
 		transition: 0.4s ease-in-out;

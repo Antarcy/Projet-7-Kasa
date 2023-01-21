@@ -1,0 +1,24 @@
+@import "./Utils/keyframes";
+@import "./Utils/mixins";
+@import "./Utils/variables";
+
+@import "./Base/base";
+@import "./Base/typography";
+
+@import "./Layout/cards";
+@import "./Layout/footer";
+@import "./Layout/header";
+@import "./Layout/section";
+
+@import "../Components/ComponentsStyles/AboutBanner";
+@import "../Components/ComponentsStyles/Banner";
+@import "../Components/ComponentsStyles/Card";
+@import "../Components/ComponentsStyles/Carrousel";
+@import "../Components/ComponentsStyles/Collapse";
+@import "../Components/ComponentsStyles/Footer";
+@import "../Components/ComponentsStyles/Header";
+@import "../Components/ComponentsStyles/Host";
+@import "../Components/ComponentsStyles/Nav";
+@import "../Components/ComponentsStyles/Rate";
+@import "../Components/ComponentsStyles/Tag";
+

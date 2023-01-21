@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/AboutBanner.scss'
+import '../style/main.scss'
 
 export default function AboutBanner() {
     return <div className="aboutBackground"></div>
