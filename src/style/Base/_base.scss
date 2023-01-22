@@ -3,22 +3,22 @@
 	box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
-
 body {
 	@include body-position;
-
-
 	@media (min-width: $breakpoint-mobile) {
 		max-width: 100%;
 	}
-
 	@media (min-width: $breakpoint-desktop) {
 		max-width: 100%;
 	}
 
 }
 main {
-	margin: 0 100px;
+	margin: 0 7%;
+
+	@media screen and (max-width: 768px) {
+        margin: 5.3%;
+    }
 }
 
 .redFont {
