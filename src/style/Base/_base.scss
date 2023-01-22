@@ -5,18 +5,22 @@
 }
 body {
 	@include body-position;
-	@media (min-width: $breakpoint-mobile) {
+
+
+	@media (min-width: $breakpoint-tablet) {
 		max-width: 100%;
 	}
+
 	@media (min-width: $breakpoint-desktop) {
 		max-width: 100%;
 	}
+
 }
 main {
-	margin: 0 7%;
+	margin: 5%;
 
-	@media screen and (max-width: 768px) {
-        margin: 5%;
+	@media screen and (min-width: $breakpoint-tablet) {
+        margin: 0 100px;
     }
 }
 
