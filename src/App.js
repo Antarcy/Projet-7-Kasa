@@ -4,25 +4,23 @@ import About from './Pages/About';
 import Header from './Components/Header';
 import Destination from './Pages/Destination';
 import Footer from "./Components/Footer";
-import ErrorPage from './Pages/ErrorPage';
+import Error from './Pages/ErrorPage';
 
 
 function App() {
-  return (
+	return (
 		<div className="App">
+			<Header />
 			<main>
-				<Header />
 				<Routes>
-        
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
-					<Route path="/logement/:id" element={<Destination />} />
-          <Route path="*" element={<ErrorPage />} />
+					<Route path="/logement/:id" element={<FicheLogement />} />
+					<Route path="*" element={<Error />} />
 				</Routes>
 			</main>
 			<Footer />
 		</div>
 	);
 }
-
 export default App;
