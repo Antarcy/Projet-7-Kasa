@@ -2,7 +2,6 @@
     display: flex;
     
 }
-
 .tagButton {
     display: flex;
     background: $primary-color;
@@ -17,4 +16,14 @@
     justify-content: center;
     margin-right: 10px;
     padding: 2px 10px 0 10px
+}
+
+.title-tags-container {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+}
+
+.tags-container {
+	display: flex;
 }

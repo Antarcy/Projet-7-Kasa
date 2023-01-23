@@ -1,7 +1,6 @@
 .collapse {
 	width: 100%;
 	margin: 31px auto 0;
-
 	&__visible {
 		background: $primary-color;
 		color: $tertiary-color;
@@ -44,22 +43,29 @@
     transform: rotate(0deg);
     transition: 0.4s 0.4s ease-in-out;
 }
-
 .rotated {
 	transform: rotate(180deg);
 	transition: 0.4s ease-in-out;
 }
-
 .about-style {
 	width: 87.5%;
 	display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .fiche-style {
 	margin-top: 31px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.collapse-fiche-container {
+	display: flex;
+    width: 100%;
+	gap: 6%;
+}
+
+.equipList {
+	list-style-type: none;
 }
