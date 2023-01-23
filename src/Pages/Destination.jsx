@@ -10,16 +10,16 @@ import data from "../data/destination.json";
 export default function Destination() {
 	const params = useParams();
 	const pickedAppart = data.find(({ id }) => id === params.id);
-
+	const slidePics = pickedAppart.pictures;
+	const tags = pickedAppart.tags;
+	const equipments = pickedAppart.equipments;
+	const equip = equipments.map((item, index) => (
+		<li key={index} className="equipList">
+			{item}
+		</li>
+	));
+	console.log(pickedAppart);
 	if (pickedAppart !== undefined) {
-		const slidePics = pickedAppart.pictures;
-		const tags = pickedAppart.tags;
-		const equipments = pickedAppart.equipments;
-		const equip = equipments.map((item, index) => (
-			<li key={index} className="equipList">
-				{item}
-			</li>
-		));
 		return (
 			<div key={params.id} className="fiche-container">
 				<Carrousel slides={slidePics} />
