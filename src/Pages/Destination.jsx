@@ -1,5 +1,5 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import Carrousel from "../Components/Carrousel";
 import Collapse from "../Components/Collapse";
 import Host from "../Components/Host";
@@ -9,18 +9,32 @@ import data from "../data/destination.json";
 
 export default function Destination() {
 	const params = useParams();
-	const pickedAppart = data.find(({ id }) => id === params.id);
-	const slidePics = pickedAppart.pictures;
-	const tags = pickedAppart.tags;
-	const equipments = pickedAppart.equipments;
-	const equip = equipments.map((item, index) => (
-		<li key={index} className="equipList">
-			{item}
-		</li>
-	));
-	console.log(pickedAppart);
-	if (pickedAppart !== undefined) {
-		return (
+	const navigate = useNavigate();
+	const [pickedAppart, setPickedAppart] = useState();
+	useEffect(() => {
+		const getData = async () => {
+			const res = await data.find(({ id }) => id === params.id);
+			if (res === undefined) {
+				navigate("/404", { state: { message: "Can't get data" } });
+			}
+			console.log("res =>", res);
+			setPickedAppart(res);
+		};
+		getData();
+	}, []);
+	console.log("pickedAppart", pickedAppart);
+	const slidePics = pickedAppart && pickedAppart.pictures;
+	const tags = pickedAppart && pickedAppart.tags;
+	const equipments = pickedAppart && pickedAppart.equipments;
+	const equip =
+		pickedAppart &&
+		equipments.map((item, index) => (
+			<li key={index} className="equipList">
+				{item}
+			</li>
+		));
+	return (
+		pickedAppart && (
 			<div key={params.id} className="fiche-container">
 				<Carrousel slides={slidePics} />
 				<section className="hostInfo-container">
@@ -55,8 +69,6 @@ export default function Destination() {
 					<Collapse aboutTitle="Équipements" aboutText={equip} />
 				</div>
 			</div>
-		);
-	} else {
-		window.location.href = "/404";
-	}
+		)
+	);
 }
