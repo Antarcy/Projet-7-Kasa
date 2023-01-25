@@ -1,10 +1,10 @@
-import React from 'react'
-import ErrorPage from '../Components/Error'
+import React from "react";
+import ErrorPage from "../Components/Error";
 
 export default function Error() {
-  return (
-    <div>
-      <ErrorPage />
-    </div>
-  )
+	return (
+		<React.Fragment>
+			<ErrorPage />
+		</React.Fragment>
+	);
 }
