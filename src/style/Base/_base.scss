@@ -18,11 +18,9 @@ main {
         margin: 0 100px;
     }
 }
-
 .redFont {
 	color: $primary-color;
 }
-
 .fiche-container {
 	display: flex;
 	justify-content: center;
@@ -30,12 +28,16 @@ main {
 	align-items: center;
 }
 
+.title-container {
+	display: flex;
+	flex-direction: column;
+}
+
 .bl-msk {
 	background: rgba(0, 0, 0, 0.3);
 	mix-blend-mode: darken;
 	border-radius: 25px;
 }
-
 .wh-msk {
 	background: #f7f7f7;
 	border-radius: 10px;

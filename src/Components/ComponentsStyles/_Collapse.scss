@@ -23,16 +23,17 @@
 			font-style: normal;
 			font-weight: 500;
 			line-height: 142.6%;
+
 			@media screen and (min-width: $breakpoint-tablet) {
-				font-size: 24px;
+				font-size: 18px;
 				font-style: normal;
 				font-weight: 500;
 				line-height: 142.6%;
 			}
 		}
 	}
+
 	&__toggle {
-		font-size: 18px;
 		font-style: normal;
 		font-weight: 400;
 		line-height: 142.6%;
@@ -46,10 +47,9 @@
 			padding: 22px 15px;
 			pointer-events: none;
 			font-size: 12px;
+
 			@media screen and (min-width: $breakpoint-tablet) {
-				font-size: 24px;
-				font-style: normal;
-				line-height: 142.6%;
+				font-size: 18px;
 			}
 		}
 	}
@@ -85,18 +85,15 @@
 	flex-direction: column;
 	align-items: center;
 }
-
 .collapse-fiche-container {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-
 	@media screen and (min-width: $breakpoint-tablet) {
 		flex-direction: row;
 		gap: 6%;
 	}
 }
-
 .equipList {
 	list-style-type: none;
 }
