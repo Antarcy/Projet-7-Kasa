@@ -1,9 +1,8 @@
 .host-comp {
-	display: flex;
+	@include flex-end;
 	width: 100%;
-	justify-content: flex-end;
-	align-items: center;
 }
+
 .hostPicture {
 	display: flex;
 	margin-left: 10px;
@@ -22,18 +21,16 @@
 		object-fit: cover;
 	}
 }
+
 .host-name {
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
+	@include flex-end;
 	width: 63px;
 	height: 66px;
 	text-align: right;
 	@include font500(12px);
-
 	@media screen and (min-width: $breakpoint-tablet) {
 		@include font500(18px);
-
+		
 	}
 }
 .rate-host-container {

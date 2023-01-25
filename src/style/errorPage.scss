@@ -1,16 +1,14 @@
 .errorContainer {
 	display: flex;
-	color: #ff6060;
+	color: $primary-color;
 	flex-direction: column;
 	align-items: center;
 	margin: 22px 6%;
 }
-
 .errorNumber {
 	@include flex-center;
 	@include font700(96px);
 	margin: 12rem 0 1rem 0;
-
 	@media screen and (min-width: $breakpoint-tablet) {
 		@include font700(288px);
 		margin: 0;
@@ -23,7 +21,6 @@
 	text-align: center;
 	@include font500(18px);
 	margin: 0 11%;
-
 	@media screen and (min-width: $breakpoint-tablet) {
 		@include font500(36px);
 		margin: 0;
@@ -34,14 +31,13 @@
 	align-items: flex-end;
 	justify-content: center;
 	text-decoration: none;
-	color: #ff6060;
+	color: $primary-color;
 	@include font500(14px);
 	margin-top: 9rem;
 
 	@media screen and (min-width: $breakpoint-tablet) {
 		@include font500(18px);
 	}
-
 	&:hover {
 		text-decoration-line: underline;
 	}

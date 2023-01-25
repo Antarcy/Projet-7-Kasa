@@ -3,7 +3,6 @@
     min-width: $wmin;
     margin: auto;
 }
-
 @mixin font-right($size) {
     font-size: $size;
     font-style: normal;
@@ -11,39 +10,40 @@
     text-align: right;
     line-height: 142.6%;
 }
-
 @mixin font700($size) {
     font-size: ($size);
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%;
 }
-
 @mixin font500($size) {
     font-size: ($size);
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%;
 }
-
 @mixin font400($size) {
     font-size: ($size);
     font-style: normal;
     font-weight: 400;
     line-height: 142.6%;
 }
-
 @mixin bkgrd($background) {
     background: $background;
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 @mixin flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@mixin flex-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 @mixin flex-banner {
@@ -53,11 +53,9 @@
     @include bkgrd($banner-background);
     margin-top: 20px;
 }
-
 @mixin small-radius {
     border-radius: 10px;
 }
-
 @mixin big-radius {
     border-radius: 25px;
 }
