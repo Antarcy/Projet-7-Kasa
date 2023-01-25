@@ -4,7 +4,7 @@ import About from './Pages/About';
 import Header from './Components/Header';
 import Destination from './Pages/Destination';
 import Footer from "./Components/Footer";
-import Error from './Components/Error';
+import Error from './Pages/ErrorPage';
 
 
 function App() {
