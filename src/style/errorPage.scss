@@ -7,15 +7,12 @@
 }
 
 .errorNumber {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@include flex-center;
 	font-size: 96px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 142.6%;
 	margin: 12rem 0 1rem 0;
-
 	@media screen and (min-width: $breakpoint-tablet) {
 		font-size: 288px;
 		font-style: normal;
@@ -24,7 +21,6 @@
 		margin: 0;
 	}
 }
-
 .errorText {
 	display: flex;
 	align-items: flex-end;
@@ -35,7 +31,6 @@
 	font-weight: 500;
 	line-height: 142.6%;
 	margin: 0 11%;
-
 	@media screen and (min-width: $breakpoint-tablet) {
 		font-size: 36px;
 		font-style: normal;
@@ -44,7 +39,6 @@
 		margin: 0;
 	}
 }
-
 .errorLinkHome {
 	display: flex;
 	align-items: flex-end;
@@ -54,14 +48,12 @@
 	font-size: 14px;
 	font-weight: 500;
 	margin-top: 9rem;
-
 	@media screen and (min-width: $breakpoint-tablet) {
 		font-size: 18px;
 		font-style: normal;
 		font-weight: 500;
 		line-height: 142.6%;
 	}
-
 	&:hover {
 		text-decoration-line: underline;
 	}
