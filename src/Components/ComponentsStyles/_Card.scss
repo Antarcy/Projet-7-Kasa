@@ -5,12 +5,10 @@
     height: 255px;
     border-radius: 10px;
     min-width: 335px;
-
     @media screen and (min-width: $breakpoint-tablet) {
         width: 340px;
         height: 340px;
     }
-
     & img{
         display: flex;
         width: 100%;
@@ -31,18 +29,14 @@
         display: flex;
         align-items: flex-end;
         position: absolute;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
+        @include font500(18px);
         color: #f1f1f1;
-        line-height: 142.6%;
         left: 5.88%;
         right: 5.88%;
         top: 78.82%;
         bottom: 5.88%;
     }
 }
-
 .cards-container {
 	display: flex;
 	justify-content: center;
@@ -51,16 +45,14 @@
 	border-radius: 10px;
 	margin: 22px 0;
 	flex-wrap: wrap;
-
     @media screen and (min-width: $breakpoint-tablet) {
         gap: 50px;
-        padding: 5% 1.5%;
+        padding: 5% 1%;
         background-color: #f7f7f7;
         border-radius: 25px;
         margin: 43px 0;
     }
 }
-
 .link_card_logement {
 	text-decoration: none;
 }
