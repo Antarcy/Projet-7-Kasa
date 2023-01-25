@@ -1,11 +1,9 @@
 .collapse {
 	width: 100%;
 	margin: 20px 0;
-
 	@media screen and (min-width: $breakpoint-tablet) {
 		margin: 31px auto 0;
 	}
-
 	&__visible {
 		background: $primary-color;
 		color: $tertiary-color;
@@ -17,17 +15,14 @@
 		padding: 7px 15px;
 		border-radius: 5px;
 		width: 100%;
-
 		@media screen and (min-width: $breakpoint-tablet) {
 			height: 47px;
 		}
-
 		h2 {
 			font-size: 13px;
 			font-style: normal;
 			font-weight: 500;
 			line-height: 142.6%;
-
 			@media screen and (min-width: $breakpoint-tablet) {
 				font-size: 24px;
 				font-style: normal;
@@ -36,7 +31,6 @@
 			}
 		}
 	}
-
 	&__toggle {
 		font-size: 18px;
 		font-style: normal;
@@ -47,13 +41,11 @@
 		background: #F7F7F7;
 		border-radius: 5px;
 		transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
-
 		p {
 			margin: 0;
 			padding: 22px 15px;
 			pointer-events: none;
 			font-size: 12px;
-
 			@media screen and (min-width: $breakpoint-tablet) {
 				font-size: 24px;
 				font-style: normal;
@@ -66,33 +58,27 @@
 	opacity: 1;
 	transition: height 0.4s ease-in-out, opacity 0.4s 0.4s ease-in-out;
 }
-
 .chevron {
 	width: 9px;
 	transform: rotate(0deg);
 	transition: 0.4s 0.4s ease-in-out;
-
 	@media screen and (min-width: $breakpoint-tablet) {
 		width: 15px;
 	}
 }
-
 .rotated {
 	transform: rotate(180deg);
 	transition: 0.4s ease-in-out;
 }
-
 .about-style {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 	@media screen and (min-width: $breakpoint-tablet) {
 		width: 87.5%;
 	}
 }
-
 .fiche-style {
 	margin-top: 31px;
 	display: flex;
@@ -102,8 +88,13 @@
 
 .collapse-fiche-container {
 	display: flex;
+	flex-direction: column;
 	width: 100%;
-	gap: 6%;
+
+	@media screen and (min-width: $breakpoint-tablet) {
+		flex-direction: row;
+		gap: 6%;
+	}
 }
 
 .equipList {
