@@ -23,6 +23,7 @@ export default function Destination() {
 			}
 		};
 		getData();
+		// eslint-disable-next-line
 	}, []); // array vide du useEffect pour ne lancer qu'une seule fois
 	const slidePics = pickedAppart && pickedAppart.pictures;
 	const tags = pickedAppart && pickedAppart.tags;

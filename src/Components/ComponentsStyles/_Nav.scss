@@ -1,24 +1,20 @@
 .nav-header {
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
+	@include flex-end;
 	text-transform: uppercase;
+
 	@media screen and (min-width: $breakpoint-tablet) {
 		text-transform: none;
 	}
-
 	&_link-home,
 	&_link-about {
 		@include font-right(12px);
 		color: $primary-color;
 		text-decoration: none;
 		padding-left: 0.8rem;
-
 		@media screen and (min-width: $breakpoint-tablet) {
 			@include font-right(24px);
 			padding-left: 3.5rem;
 		}
-
 		&:hover {
 			text-decoration-line: underline;
 		}
