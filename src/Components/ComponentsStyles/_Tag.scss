@@ -20,23 +20,18 @@
 }
 
 .title-tags-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-column;
 
     h1 {
         margin: 2% 0;
         @include font(18px, 500);
-
         @media screen and (min-width: $breakpoint-tablet) {
             @include font(36px, 500);
         }
     }
-
     h3 {
         margin: 2% 0;
         @include font(14px, 500);
-
         @media screen and (min-width: $breakpoint-tablet) {
             @include font(18px, 500);
         }
