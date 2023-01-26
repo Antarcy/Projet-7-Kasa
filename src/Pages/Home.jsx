@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Banner from "../Components/Banner";
 import Card from "../Components/Card";
+import MiniSlide from "../Components/MiniSlide"
 import { Link } from "react-router-dom";
 import axios from "axios";
 
@@ -16,7 +17,7 @@ export default function Home() {
 				{data.map((appart, id) => (
 					<div className="card_logement" key={id}>
 						<Link className="link_card_logement" to={`/logement/${appart.id}`}>
-							<Card cover={appart.cover} title={appart.title} />
+							<MiniSlide slides={appart.pictures} cover={appart.cover} title={appart.title} id={appart.id} />
 						</Link>
 					</div>
 				))}
