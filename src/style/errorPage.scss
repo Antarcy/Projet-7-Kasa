@@ -12,13 +12,11 @@
 		margin: 0;
 	}
 }
-
 %flex-error {
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
 }
-
 .errorText {
 	@extend %flex-error;
 	text-align: center;
@@ -29,7 +27,6 @@
 		margin: 0;
 	}
 }
-
 .errorLinkHome {
 	@extend %flex-error;
 	text-decoration: none;
@@ -39,7 +36,8 @@
 	@media screen and (min-width: $breakpoint-tablet) {
 		@include font(18px, 500);
 	}
-	&:hover {
+
+	&:hover, &:focus{
 		text-decoration-line: underline;
 	}
 }

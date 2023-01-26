@@ -1,7 +1,6 @@
 .nav-header {
 	@include flex-end;
 	text-transform: uppercase;
-
 	@media screen and (min-width: $breakpoint-tablet) {
 		text-transform: none;
 	}
@@ -15,7 +14,8 @@
 			@include font-right(24px);
 			padding-left: 3.5rem;
 		}
-		&:hover {
+
+		&:hover, &:focus {
 			text-decoration-line: underline;
 		}
 	}
