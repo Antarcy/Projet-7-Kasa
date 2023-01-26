@@ -2,7 +2,6 @@ import { useState } from "react";
 import left from "../assets/images/vector-left.svg";
 import right from "../assets/images/vector-right.svg";
 
-
 export default function Carrousel({ slides }) {
 	const [current, setCurrent] = useState(0); //je définie l'index du premier slide à 0
 	const length = slides.length; // longueur du tableau de slides
@@ -12,7 +11,6 @@ export default function Carrousel({ slides }) {
 	const prevSlide = () => {
 		setCurrent(current === 0 ? length - 1 : current - 1); // on repart au dernier slide quand on est au premier
 	};
-
 	return (
 		<section id="carrousel-container">
 			{length > 1 && (

@@ -5,6 +5,7 @@
 	margin-top: 5%;
 	background-color: $footer-color;
 	flex-direction: column;
+
 	&__text {
 		@include font(12px, 500);
 		display: flex;
@@ -13,10 +14,12 @@
 		color: $tertiary-color;
 		width: 100%;
 		margin: 4% 0 3% 0;
+
 		@media screen and (min-width: $breakpoint-tablet) {
 			@include font(24px, 500);
 		}
 	}
+
 	img {
 		margin-top: 2%;
 		width: 122px;

@@ -12,6 +12,7 @@ import axios from "axios";
 export default function Destination() {
 	const params = useParams();
 	const navigate = useNavigate();
+
 	const [pickedAppart, setPickedAppart] = useState();
 	useEffect(() => {
 		const getData = async () => {

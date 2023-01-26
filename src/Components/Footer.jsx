@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../assets/images/logo-footer.svg'
 
 
+
 export default function Footer() {
 	return (
 		  <footer className="foot-container">

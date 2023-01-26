@@ -5,10 +5,12 @@
     height: 255px;
     margin: 2% 0;
     overflow: hidden;
+
     @media screen and (min-width: $breakpoint-tablet) {
         height: 415px;
     }
 }
+
 .slider {
     @include WH-full;
     position: absolute;
@@ -19,9 +21,11 @@
     @include small-radius;
     opacity: 0;
     transition: opacity ease-in-out 0.6s;
+
     @media screen and (min-width: $breakpoint-tablet) {
         @include big-radius;
     }
+
     & img {
         @include WH-full;
         object-fit: cover;
@@ -32,12 +36,15 @@
         bottom: 0%;
         mix-blend-mode: normal;
         @include small-radius;
+
         @media screen and (min-width: $breakpoint-tablet) {
             @include big-radius;
         }
     }
+
     &__number {
         display: none;
+
         @media screen and (min-width: $breakpoint-tablet) {
             display: block;
             position: absolute;
@@ -48,12 +55,15 @@
         }
     }
 }
+
 .active-anim {
     opacity: 1;
 }
+
 .rightArrow {
     @include rightArrow-style;
 }
+
 .leftArrow {
     @include leftArrow-style;
 }

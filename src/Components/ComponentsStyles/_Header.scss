@@ -13,9 +13,11 @@
 		align-items: flex-start;
 		margin: 0;
 		width: 9rem;
+
 		@media screen and (min-width: $breakpoint-tablet) {
 			width: 13.2rem;
 		}
+
 		img {
 			width: 100%;
 		}
