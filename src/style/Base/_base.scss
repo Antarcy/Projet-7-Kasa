@@ -29,7 +29,6 @@ main {
 	display: flex;
 	flex-direction: column;
 }
-
 .bl-msk {
 	background: $background-color;
 	mix-blend-mode: darken;
@@ -37,7 +36,7 @@ main {
 }
 
 .wh-msk {
-	background: #f7f7f7;
+	background: $secondary-color;
 	@include small-radius;
 
 	@media screen and (min-width: $breakpoint-tablet) {
