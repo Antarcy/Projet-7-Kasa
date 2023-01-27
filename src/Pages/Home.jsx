@@ -6,9 +6,11 @@ import axios from "axios";
 
 export default function Home() {
 	const [data, setData] = useState([]);
+
 	useEffect(() => {
 		axios.get("/logements.json").then((res) => setData(res.data));
 	}, []);
+
 	return (
 		<div>
 			<Banner />
