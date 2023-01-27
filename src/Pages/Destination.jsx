@@ -5,22 +5,19 @@ import Collapse from "../Components/Collapse";
 import Host from "../Components/Host";
 import Rate from "../Components/Rate";
 import Tag from "../Components/Tag";
-
 import axios from "axios";
-
 
 export default function Destination() {
 	const params = useParams();
 	const navigate = useNavigate();
-
 	const [pickedAppart, setPickedAppart] = useState();
 	useEffect(() => {
 		const getData = async () => {
-			const res = await axios.get("/logements.json");
+			const res = await axios.get("/logements.json"); //j'ai préféré utiliser une requète AXIOS pour être prêt à la future mise en place de l'API
 			const picked = res.data.find(({ id }) => id === params.id);
 			res.data.map(() => setPickedAppart(picked));
 			if (picked === undefined) {
-				navigate("/404", { state: { message: "Can't get data" } });
+				navigate("/404", { state: { message: "Can't get data" } }); //renvoi vers la page 404 en cas d'URL de logement invalide
 			}
 		};
 		getData();
