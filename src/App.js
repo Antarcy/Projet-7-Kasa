@@ -12,7 +12,7 @@ function App() {
 		<div className="App">
 			<Header />
 			<main>
-				<Routes>
+				<Routes> {/* Rend les routes disponible dans tout le projet  */}
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/logement/:id" element={<Destination />} />
