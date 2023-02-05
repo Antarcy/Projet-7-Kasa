@@ -9,6 +9,15 @@
 2 : Réalisation du front end, à l'exception d'une liaison API Fetch avec Axios verts le .json déjà en place de façon à anticiper l'arrivée du back-end et le remplacement de celui-ci dans le développement futur. 
 
 
+#Instalation : 
+
+1 ) Depuis le dossier Kasa, dans le terminal, faire ==> npm i.
+
+2 ) Toujours depuis le dossier Kasa, dans le terminal, faire ==> npm start. 
+
+3 ) Voici l'url local en cas de soucis de lancement automatisé ==> "localhost:3000".
+
+
 
 
 Desktop Version
