@@ -13,7 +13,7 @@ function App() {
 			<Header />
 			<main>
 				<Routes> {/* Rend les routes disponible dans tout le projet  */}
-					<Route path="/Kasa/" element={<Home />} />
+					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/logement/:id" element={<Destination />} />
 					<Route path="*" element={<Error />} />

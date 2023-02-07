@@ -7,8 +7,8 @@ export default function Nav() {
   return (
     <nav className="nav">
       <ul className='nav_list'>
-              <li className={currentRoute === '/Kasa/' ? 'nav_list_item_active' : 'nav_list_item'}>
-                  <NavLink  to='/Kasa/'>
+              <li className={currentRoute === '/kasa/' ? 'nav_list_item_active' : 'nav_list_item'}>
+                  <NavLink  to='/'>
                       Accueil
                   </NavLink>
               </li>
