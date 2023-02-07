@@ -1,23 +1,35 @@
-.nav-header {
-  @include flex-end;
-  text-transform: uppercase;
-  @media screen and (min-width: $breakpoint-desktop) {
-    text-transform: none;
-  }
-  &_link-home,
-  &_link-about {
-    @include font-right(12px);
-    color: $primary-color;
-    
-    padding-left: 0.8rem;
-    @media screen and (min-width: $breakpoint-desktop) {
-      @include font-right(24px);
-      padding-left: 3.5rem;
-    }
 
-    &:hover,
-    &:focus {
-      text-decoration-line: underline;
-    }
+a{
+    text-decoration-line: none;
+    color: $primary-color;
+}
+
+
+a.active{
+    text-decoration-line: underline;
+    color: $primary-color;
+}
+
+li{
+    list-style: none;
+}
+
+
+.nav_list{
+  display: flex;
+  gap: 50px;
+  color: $primary-color;
+  font-size: clamp(12px, 2.5vw, 24px);
+  @media screen and (max-width: 700px){
+      gap: 20px;
+  }
+  &_item{
+      &_active{
+          position: relative;
+          color: $primary-color;
+          transition: all 0.2s ease-in-out;
+          text-decoration: underline solid $primary-color; 
+          
+      }
   }
 }
